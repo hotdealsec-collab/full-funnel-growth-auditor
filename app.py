@@ -130,7 +130,7 @@ def main():
         m2.metric("合計売上 (Revenue)", f"${df['revenue'].sum():,.0f}")
         m3.metric("迷い指数 (Avg. Wandering)", f"{df['wandering_index'].mean():.2f}")
         m4.metric("転換効率 (Avg. Conv. Eff.)", f"{df['conv_efficiency'].mean():.1f}%")
-        m5.metric("警告対象 (Critical)", f"{len(df[df['status'] == '🔥 Critical'])}건")
+        m5.metric("警告対象 (Critical)", f"{len(df[df['status'] == '🔥 Critical'])}個")
 
         # B. AI Analysis Section (New!)
         render_ai_analysis(df)
