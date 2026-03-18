@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Streamlit
+.streamlit/
+
+# Data Files (민감한 마케팅 데이터 보호)
+*.csv
+*.xlsx
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
