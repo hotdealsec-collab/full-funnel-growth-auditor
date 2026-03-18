@@ -67,7 +67,7 @@ def render_ai_analysis(df):
         <p>全体の「迷い指数」平均は <b>{avg_wandering:.2f}</b> です。現在、<b>{critical_count}件</b> のキャンペーンでUXの摩擦が大きく、改善の余地があります。</p>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 10px;">
             <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;">
-                <h4 style="color: #fbbf24; margin-top:0;">⚠️ ボ틀ネックの特定</h4>
+                <h4 style="color: #fbbf24; margin-top:0;">⚠️ ボトルネックの特定</h4>
                 <p style="font-size: 0.9rem;">摩擦が高いキャンペーンは、クリエイティブと作品詳細ページの整合性を確認してください。</p>
             </div>
             <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;">
