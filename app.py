@@ -58,7 +58,7 @@ def calc_metrics(df):
     def detect_bottleneck(row):
         issues = []
         if row['wandering_index'] > 1.5: issues.append("UX摩擦 (Home)")
-        if row['home_engagement'] < 0.2: issues.append("クリック率低迷 (Home)")
+        if row['home_engagement'] < 0.2: issues.append("回遊率低迷 (Home)")
         if row['conv_efficiency'] < 10: issues.append("転換の壁 (Viewer)")
         return ", ".join(issues) if issues else "最適化済み"
 
@@ -102,7 +102,7 @@ def render_ai_analysis(df):
                     <p class="guide-title">🚩 警告の種類と意味</p>
                     <ul style="font-size: 0.85rem; color: #cbd5e1;">
                         <li><b>UX摩擦 (Home):</b> ユーザーがホーム画面で何度も操作しているが、作品詳細へ遷移できていない「迷い」の状態。UIの複雑さが原因。</li>
-                        <li><b>クリック率低迷 (Home):</b> 画面は見られているが、主要なボタンが押されていない。クリエイティブとコンテンツの不一致。</li>
+                        <li><b>回遊率低迷 (Home):</b> 画面は見られているが、主要なボタンが押されていない。クリエイティブとコンテンツの不一致。</li>
                         <li><b>転換の壁 (Viewer):</b> 詳細ページまでは来るが、ビューアー（作品閲覧）に繋がらない。作品の魅力不足や課金障壁。</li>
                     </ul>
                 </div>
