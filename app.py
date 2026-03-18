@@ -31,7 +31,7 @@ def load_and_merge(files):
     # GA4 Event Pivot
     ga_ev['campaign'] = ga_ev['セッションのキャンペーン'].astype(str).str.strip().str.lower()
     ev_pivoted = ga_ev[ga_ev['イベント名'].isin(['PRODUCT_HOME_OBJECT_EVENT', 'OPEN_PRODUCT_HOME', 'OPEN_VIEWER'])]\
-        .pivot_table(index='campaign', columns='イベント名', values='イベント수', aggfunc='sum').fillna(0).reset_index()
+        .pivot_table(index='campaign', columns='イベント名', values='イベント数', aggfunc='sum').fillna(0).reset_index()
 
     # GA4 Screen Grouping
     ga_sc['campaign'] = ga_sc['セッションのキャンペーン'].astype(str).str.strip().str.lower()
